@@ -33,3 +33,5 @@ setup(
     packages = find_packages(),
     install_requires=get_requirements(),
 )
+
+#sensor.egg info will be craeted which will conatin sensor package and other dependency package list of folder which have __init__.py in it
