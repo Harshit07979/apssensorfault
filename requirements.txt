@@ -1,0 +1,21 @@
+dill
+dnspython
+fastapi
+httptools
+imblearn
+mypy-boto3-s3
+pip-chill
+pymongo
+python-dotenv
+types-s3transfer
+uvicorn
+watchfiles
+websockets
+wincertstore
+xgboost
+pandas
+PyYAML
+numpy
+scikit-learn
+apache-airflow
+-e .
