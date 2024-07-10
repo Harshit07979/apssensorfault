@@ -1,3 +1,4 @@
+#we want logg file in proper way thats why this file and to create a new log file
 import os
 from datetime import datetime
 import logging

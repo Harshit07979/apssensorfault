@@ -1,10 +1,11 @@
-#to manage the all database connection
+#to manage the all database connection and secret keys for .env file
+import os
 import pymongo
 import pandas as pd
 import json
 from dataclasses import dataclass
 # Provide the mongodb localhost url to connect python to mongodb.
-import os
+
 
 @dataclass
 class EnvironmentVariable:

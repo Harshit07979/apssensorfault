@@ -1,4 +1,6 @@
-import sys,os
+#we want exception message in particular format so thats why this model
+import sys
+import os
 
 def error_message_detail(error, error_detail: sys):
     _, _, exc_tb = error_detail.exc_info() #It extracts information about the error (file name, line number, and error message) using exc_info().

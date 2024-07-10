@@ -5,19 +5,19 @@
 #evaluation is the process of evaluating the model and making it ready for production
 #trainer is the process of training the model and making it ready for production
 #pusher is the process of pushing the model to production and making it ready for use
-
+import os, sys
 from sensor import utils
 from sensor.entity import config_entity
 from sensor.entity import artifact_entity 
 from sensor.exception import SensorException
 from sensor.logger import logging
-import os, sys
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
 import numpy as np
 
 #loading csv file and doing some changes and perfoming all the necessary task of data ingestion
-class Dataingestion:
+class DataIngestion:
 
     def __init__(self,data_ingestion_config:config_entity.DataIngestionConfig):
         try:
@@ -37,7 +37,7 @@ class Dataingestion:
             logging.info("Save data in feature store")
 
             #now replace na values which is present in .csv file
-            df.replace(to_replace="na", value=np.NAN, inplace=True)
+            df.replace(to_replace="na", value=np.nan, inplace=True)
 
             #now we want to store it in feature store path
             #Save data in feature store
