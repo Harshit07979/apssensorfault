@@ -20,3 +20,8 @@ class EnvironmentVariable:
 env_var = EnvironmentVariable()
 mongo_client = pymongo.MongoClient(env_var.mongo_db_url)
 TARGET_COLUMN = "class"
+#to encode class into 0 and 1 to use later in model transformation
+TARGET_COLUMN_MAPPING={
+    "pos": 1,
+    "neg": 0
+}
