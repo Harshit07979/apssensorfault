@@ -6,7 +6,9 @@ artifact
 
 # C extensions
 *.so
-
+prediction
+saved_models
+logs 
 # Distribution / packaging
 .Python
 build/

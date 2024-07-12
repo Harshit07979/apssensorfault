@@ -1,1 +1,1 @@
-rom sensor.config import mongo_client
+start_training_pipeline()

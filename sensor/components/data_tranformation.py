@@ -86,7 +86,7 @@ class DataTransformation:
             input_feature_test_arr = transformation_pipeline.transform(input_feature_test_df)
 
             #now we will balance our data usinf smttomek and increase minority daata
-            smt = SMOTETomek(sampling_strategy="minority")
+            smt = SMOTETomek(random_state=42)
             logging.info(f"Before Resampling in training set input:{input_feature_train_arr.shape} Taregt: {target_feature_train_arr.shape}")
             #fitting the data
             input_feature_train_arr, target_feature_train_arr=smt.fit_resample(input_feature_train_arr, target_feature_train_arr)
