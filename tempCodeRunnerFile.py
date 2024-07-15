@@ -1,1 +1,0 @@
-start_training_pipeline()

@@ -2,11 +2,15 @@
 import pymongo
 import pandas as pd
 import json
+from dotenv import load_dotenv
+
+print(f"Loading environment variable from .env file")
+load_dotenv()
 
 #from sensor.config import mongo_client
 
 #prividing link to mongodb local host
-client =pymongo.MongoClient("mongodb://localhost:27017")
+client =pymongo.MongoClient("mongodb+srv://harshit00709:DUOlJBEak0k7pXKh@cluster01.jrh9fuf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster01")
 
 #giving name to my datafram to store in mongodb
 DATA_FILE_PATH="E:/sensordetect/aps_failure_training_set1.csv"
