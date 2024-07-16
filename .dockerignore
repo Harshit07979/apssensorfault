@@ -1,0 +1,32 @@
+# Exclude Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# Exclude logs
+*.log
+artifact
+logs
+saved_models
+# Exclude virtual environments
+venv/
+env/
+
+# Exclude artifacts
+*.egg-info/
+.eggs/
+
+# Exclude version control directories
+.git/
+.gitignore
+
+# Exclude Docker-related fil
+# Exclude Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Exclude other unnecessary files and directories
+node_modules/
+dist/
+build/
+*.bak
+*.tmp

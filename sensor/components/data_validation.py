@@ -140,7 +140,7 @@ class DataValidation:
     def initiate_data_validation(self)->artifact_entity.DataValidationArtifact:
         try:
             logging.info(f"Reading base dataframe")
-            base_df = pd.read_csv(self.data_validation_config.base_file_path)
+            base_df = pd.read_csv("/app/aps_failure_training_set1.csv")
             base_df.replace({"na":np.nan},inplace=True)
             logging.info(f"Replace na value in base df")
             #base_df has na as null
